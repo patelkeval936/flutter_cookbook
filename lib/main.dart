@@ -38,7 +38,9 @@ class _MyHomePageState extends State<MyHomePage> {
           padding: const EdgeInsets.symmetric(vertical: 20),
           child: Column(
             children: [
-
+              ElevatedButton(onPressed: (){
+                Navigator.of(context).push(MaterialPageRoute(builder: (context)=>DemoTextField()));
+              }, child: Text('TextField'))
             ],
           ),
         ),
