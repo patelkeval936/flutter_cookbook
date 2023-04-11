@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_cookbook/flutterLogo.dart';
 import 'package:flutter_cookbook/textField.dart';
 
 void main() {
@@ -40,7 +41,10 @@ class _MyHomePageState extends State<MyHomePage> {
             children: [
               ElevatedButton(onPressed: (){
                 Navigator.of(context).push(MaterialPageRoute(builder: (context)=>DemoTextField()));
-              }, child: Text('TextField'))
+              }, child: Text('TextField')),
+              ElevatedButton(onPressed: (){
+                Navigator.of(context).push(MaterialPageRoute(builder: (context)=>DemoFlutterLogo()));
+              }, child: Text('Flutter Logo')),
             ],
           ),
         ),
