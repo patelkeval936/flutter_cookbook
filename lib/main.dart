@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_cookbook/ButtonsAndClickables.dart';
 import 'package:flutter_cookbook/flutterLogo.dart';
 import 'package:flutter_cookbook/textField.dart';
 
@@ -45,6 +46,9 @@ class _MyHomePageState extends State<MyHomePage> {
               ElevatedButton(onPressed: (){
                 Navigator.of(context).push(MaterialPageRoute(builder: (context)=>DemoFlutterLogo()));
               }, child: Text('Flutter Logo')),
+              ElevatedButton(onPressed: (){
+                Navigator.of(context).push(MaterialPageRoute(builder: (context)=>DemoButtonsAndClickables()));
+              }, child: Text('Buttons And Clickables')),
             ],
           ),
         ),
